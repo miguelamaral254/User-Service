@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Parent do Spring Boot -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.3.3</version>
+        <relativePath/> <!-- Procura o parent do Spring Boot no repositório -->
+    </parent>
+
+    <!-- Identificação do projeto principal -->
+    <groupId>br.com</groupId>
+    <artifactId>user-service</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <!-- Definição dos módulos filhos -->
+    <modules>
+        <module>core</module>
+        <module>usecase</module>
+        <module>application</module>
+        <module>infrastructure</module>
+    </modules>
+
+    <!-- Propriedades do projeto -->
+    <properties>
+        <java.version>17</java.version>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <!-- Dependências comuns a todos os módulos -->
+    <dependencyManagement>
+        <dependencies>
+            <!-- Adicione dependências comuns aqui, se necessário -->
+        </dependencies>
+    </dependencyManagement>
+</project>
